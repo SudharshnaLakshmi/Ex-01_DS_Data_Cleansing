@@ -20,4 +20,26 @@ Save the Clean data to the file
 
 
 # CODE
-# OUPUT
+```
+
+import pandas as pd
+df = pd.read_csv("Data_set.csv")
+df.head(10)
+df.info()
+df.isnull().sum()
+df['show_name']=df['show_name'].fillna(df['show_name'].mode()[0])
+df.head()
+df['rating']=df['rating'].fillna(df['rating'].mean())
+df.head()
+df['watchers']=df['watchers'].fillna(df['watchers'].median())
+df.head()
+df.info()
+df.isnull().sum()
+
+```
+# OUTPUT
+![OUTPUT](./1.png)
+![OUTPUT](./2.png)
+![OUTPUT](./3.png)
+![OUTPUT](./4.png)
+![OUTPUT](./5.png)
