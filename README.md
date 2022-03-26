@@ -46,3 +46,6 @@ df.isnull().sum()
 ![OUTPUT](./3.png)
 ![OUTPUT](./4.png)
 ![OUTPUT](./5.png)
+
+# RESULT
+The given data has been read and data cleaning has been performed and saved the cleaned data to a file. 
