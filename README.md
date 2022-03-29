@@ -38,6 +38,7 @@ df['watchers']=df['watchers'].fillna(df['watchers'].median())
 df.head()
 df.info()
 df.isnull().sum()
+df.to_csv('Data_set.csv', index=False)
 
 ```
 # OUTPUT
