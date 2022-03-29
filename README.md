@@ -38,7 +38,8 @@ df['watchers']=df['watchers'].fillna(df['watchers'].median())
 df.head()
 df.info()
 df.isnull().sum()
-df.to_csv('Data_set.csv', index=False)
+df.to_csv('Data_set.csv')
+df
 
 ```
 # OUTPUT
@@ -47,6 +48,7 @@ df.to_csv('Data_set.csv', index=False)
 ![OUTPUT](./3.png)
 ![OUTPUT](./4.png)
 ![OUTPUT](./5.png)
+![OUTPUT](./6.png)
 
 # RESULT
 The given data has been read and data cleaning has been performed and saved the cleaned data to a file. 
